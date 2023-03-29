@@ -17,18 +17,19 @@ Dependencies:
 
 - PipeWire `pw-record`
 - json thing `jq`
-- `whisper-cli`
+- python `whisper-cli`
 
+```
+export OPENAI_API_KEY=<your-key-here>
+sudo apt install jq
+pip install whisper-cli
+```
 
 ### Usage:
 
 ### hey_whisper
 
 ```
-export OPENAI_API_KEY=<your-key-here>
-sudo apt install jq
-pip install whisper-cli
-
 ✗|→ hey_whisper
 Recording your voice. Press Ctrl+C to stop recording.
 ^CWhisper output: Write me a Python function that takes two numbers and adds them together and returns the result.
