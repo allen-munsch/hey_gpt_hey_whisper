@@ -22,7 +22,7 @@ Dependencies:
 
 ### Usage:
 
-##### hey_whisper
+### hey_whisper
 
 ```
 export OPENAI_API_KEY=<your-key-here>
@@ -47,12 +47,22 @@ In this example, the `add_numbers` function is called with arguments `5` and `7`
 
 ```
 
-##### hey_gpt
+### hey_whisper $(cat some/data)
+
+```
+hey_whisper $(cat tests/functional_tests_in_selenium.py)
+Recording your voice. Press Ctrl+C to stop recording.
+^CWhisper output: Rewrite this functional test as a playwright script.
+```
+
+### hey_gpt 'some question'
 
 ```
 hey_gpt 'what does 42 mean?'
 As an AI language model, I do not have personal beliefs and/or opinions. However, 42 is a number that is famously associated with the science fiction novel "The Hitchhiker's Guide to the Galaxy" by Douglas Adams. In the novel, 42 is identified as the "Answer to the Ultimate Question of Life, the Universe, and Everything" calculated by an enormous supercomputer named Deep Thought over a period of 7.5 million years. It has since become a popular culture reference and meme.
 ```
+
+### hey_gpt 'please sort' $(cat some/data)
 
 ```
 hey_gpt 'can you sor this' 'b,c,d,a'
