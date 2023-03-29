@@ -29,6 +29,6 @@ hey_whisper() {
     whisper env activate --env dev
     whisper_output=$(whisper transcribe $output_file)
     echo "Whisper output: $whisper_output"
-    hey_gpt "$whisper_output"
+    hey_gpt "$whisper_output" "$1"
     echo "GPT result: $hey_gpt_result"
 }
