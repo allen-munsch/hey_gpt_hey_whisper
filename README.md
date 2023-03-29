@@ -1,5 +1,6 @@
 # hey_gpt_hey_whisper
-simple bash functions that can be used to ask, and talk to openai gpt
+
+#### simple bash functions that can be used to ask, and talk to openai gpt, from the terminal.
 
 Inspired by: https://kadekillary.work/posts/1000x-eng/
 
@@ -19,7 +20,9 @@ Dependencies:
 - `whisper-cli`
 
 
-Usage:
+### Usage:
+
+##### hey_whisper
 
 ```
 export OPENAI_API_KEY=<your-key-here>
@@ -44,9 +47,17 @@ In this example, the `add_numbers` function is called with arguments `5` and `7`
 
 ```
 
+##### hey_gpt
 
 ```
 hey_gpt 'what does 42 mean?'
 As an AI language model, I do not have personal beliefs and/or opinions. However, 42 is a number that is famously associated with the science fiction novel "The Hitchhiker's Guide to the Galaxy" by Douglas Adams. In the novel, 42 is identified as the "Answer to the Ultimate Question of Life, the Universe, and Everything" calculated by an enormous supercomputer named Deep Thought over a period of 7.5 million years. It has since become a popular culture reference and meme.
+```
 
+```
+hey_gpt 'can you sor this' 'b,c,d,a'
+
+Sure, here is the sorted list: 
+
+a, b, c, d
 ```
