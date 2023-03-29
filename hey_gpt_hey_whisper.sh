@@ -30,7 +30,7 @@ hey_whisper() {
     trap handle_ctrl_c SIGINT
 
     # Record your voice
-    output_file="example.mp3"
+    output_file="/tmp/hey_gpt_hey_whisper.mp3"
     echo "Recording your voice. Press Ctrl+C to stop recording."
     pw-record $output_file
 
