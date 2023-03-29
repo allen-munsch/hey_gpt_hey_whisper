@@ -1,4 +1,7 @@
 
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+
 
 # Function to handle the SIGINT signal (Ctrl+C)
 handle_ctrl_c() {
